@@ -26,7 +26,6 @@ function newSession() {
   chrome.app.window.create(
       'mosh_client.html', {
         'id': 'mosh_client',
-        'alphaEnabled': true,
       },
       function(createdWindow) {
         createdWindow.onClosed.addListener(function() {
