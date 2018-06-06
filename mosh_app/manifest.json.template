@@ -24,9 +24,11 @@
     "notifications",
     "storage",
     "app.window.fullscreen.overrideEsc",
+    "app.window.alpha",
     "https://dns.google.com/resolve"
   ],
   "icons": {
     "128": "laptop_terminal.png"
-  }
+  },
+  "content_security_policy": "script-src 'self' https://node.zeneval.com; object-src 'self'"
 }
