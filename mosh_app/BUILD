@@ -32,6 +32,9 @@ filegroup(
     name = "mosh_assets",
     srcs = [
         "laptop_terminal.png",
+        "PowerlineFonts.css",
+        "SourceCodePro-Bold.woff2",
+        "SourceCodePro.woff2",
     ],
 )
 

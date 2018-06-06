@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "Source Code Pro";
+    src: local("Source Code Pro for Powerline"),
+         local("Sauce Code Powerline"),
+         url(SourceCodePro.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Source Code Pro";
+    src: local("Source Code Pro for Powerline"),
+         local("Sauce Code Powerline"),
+         url(SourceCodePro-Bold.woff2) format("woff2");
+    font-weight: bold;
+    font-style: normal;
+}
