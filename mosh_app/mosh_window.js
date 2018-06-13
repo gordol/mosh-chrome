@@ -32,6 +32,10 @@ function execMosh() {
     terminal.setCursorPosition(0, 0);
     terminal.setCursorVisible(true);
     terminal.runCommandClass(mosh.CommandInstance, window.args);
+
+    //hack to bump fontsize up and back to make window adjust properly
+    window.setTimeout(function(){terminal.setFontSize(terminal.getFontSize()+1)}, 20);
+    window.setTimeout(function(){terminal.setFontSize(terminal.getFontSize()-1)}, 20);
   };
 
   // Don't exit fullscreen with ESC.
