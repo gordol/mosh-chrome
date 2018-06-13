@@ -84,7 +84,7 @@ new_git_repository(
 
 new_git_repository(
     name = "mosh",
-    remote = "https://github.com/rpwoodbu/mosh.git",
+    remote = "https://github.com/mobile-shell/mosh.git",
     commit = "cf73e1f8799b01ad1ed9731c6b3d239b68509222", # tag = "mosh-1.3.2"
     build_file = "external_builds/BUILD.mosh",
 )
@@ -93,8 +93,8 @@ new_git_repository(
 # causes "not authorized" from Bazel. I assume that's a Bazel bug?
 new_git_repository(
     name = "libapps",
-    remote = "https://github.com/rpwoodbu/libapps.git",
-    commit = "89e3d74ec7cf8627ba1650e7ab97c6ab0009c778", # tag = "hterm-1.61"
+    remote = "https://github.com/libapps/libapps-mirror",
+    commit = "a8d402c0d12b1a88186cedaab208a91ce9f261f8", # tag = "hterm-1.78"
     build_file = "external_builds/BUILD.libapps",
 )
 
