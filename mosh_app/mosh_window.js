@@ -36,20 +36,14 @@ function execMosh() {
     //hack to bump fontsize up and back to make window adjust properly
     window.setTimeout(function(){terminal.setFontSize(terminal.getFontSize()+1)}, 20);
     window.setTimeout(function(){terminal.setFontSize(terminal.getFontSize()-1)}, 20);
-  };
 
-  // Don't exit fullscreen with ESC.
-  terminal.document_.onkeyup = function(e) {
-    if (e.keyCode == 78 && e.ctrlKey && e.shiftKey){
+    terminal.keyboard.bindings.addBinding('Ctrl-Shift-N', function() {
       chrome.app.window.create(
         'mosh_client.html', {
           'id': 'mosh_client',
         });
+    });
 
-
-    }else if (e.keyCode == 27) {
-      e.preventDefault();
-    }
   };
 
   document.title += ' - ' + window.args['addr'];
